@@ -389,13 +389,18 @@ hr{
     z-index: 1;
 }
 
-.social-icons img{
+.social-icons i{
+    font-size: 30px;
     display: block;
     width: 20px;
     margin: 0 auto 20px;
     cursor: pointer;
+    transform: .3s
 }
 
+.social-icons i:hover{
+    color: var(--dark-blue);
+}
 @media only screen and (max-width: 770px){
     #header{
         background-image: none;
@@ -425,8 +430,8 @@ hr{
         padding: 10px 16px;
         
     } */
-    .social-icons img{      
-        width: 14px;
+    .social-icons i{      
+        font-size: 14px;
         margin: 15px auto;
     }
     .about-left-col, .about-right-col{
