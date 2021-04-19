@@ -7,11 +7,12 @@
 :root {
     --dark-blue: #3333B1;
     --bright-blue: #8585E1;
+    /* unDraw: #3333B1 */
 }
 
 /* var(--bright-blue) */
 #header{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(images/background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ h1{
     padding: 18px 40px;
     background: transparent;
     outline: none;
-    border: 20 solid black;
+    border: 2px solid black;
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
@@ -65,10 +66,20 @@ h1{
 }
 
 a.common-btn{
-    text-decoration: none;
-    border: 20 solid black;
+    display: inline-block;
+    text-decoration: none;    
+    margin: 15px 0;
+    width: 50%;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
 }
 
+
+.hidden{
+    display: none;   
+}
 
 p{
     font-size: 15px;
@@ -163,7 +174,8 @@ nav ul li a:hover{
 }
 
 .about-left-col img{
-    width: 100%;
+    width: 60%;
+    margin-left: 15%;
 }
 
 .about-right-col{
@@ -252,7 +264,7 @@ nav ul li a:hover{
 }
 
 .course-right-col img{
-    width: 100%;
+    width: 80%;
 }
 
 .course-left-col{
@@ -287,7 +299,7 @@ nav ul li a:hover{
 }
 
 .contact-right-col img{
-    width: 100%;
+    width: 80%;
 }
 
 form{
@@ -379,6 +391,25 @@ hr{
     flex-basis: 40%;
 }
 
+a i{
+    font-size: 30px;
+    animation: arrow 2s linear infinite alternate;
+}
+
+a:hover i{
+    animation: break;
+    color: #fff;
+}
+
+@keyframes arrow{
+    0%{
+        color: rgba(0,0,0);
+    }
+    100%{
+        color: rgb(82, 82, 82);
+    }    
+    
+}
 
 
 
@@ -408,6 +439,7 @@ hr{
 @media only screen and (max-width: 770px){
     #header{
         background-image: none;
+        margin-bottom: -80px;
     }
     .container{
         margin-right: 50px;
@@ -416,6 +448,9 @@ hr{
     .logo{
         margin-top: 27px;
         width: 70px;
+    }
+    a.common-btn{
+        margin: 50px auto;
     }
     
     .header-text{
@@ -430,6 +465,7 @@ hr{
         right: 50px;
         
     }
+    
     
     .social-icons i{      
         font-size: 14px;
@@ -474,3 +510,5 @@ hr{
     }
 
 }
+
+

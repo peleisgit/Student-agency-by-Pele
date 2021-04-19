@@ -30,7 +30,7 @@
             Jeśli marzysz o tym by studiować w Polsce ta strona jest dla Ciebie!
             Pomożemy Ci zarejestrować się na studia w całej Polsce.
           </p>
-          <button class="common-btn">Czytaj więcej</button>
+
           <a class="common-btn" href="#about">Czytaj więcej</a>
           <div class="line">
             <div class="line-1"></div>
@@ -119,7 +119,7 @@
             <div class="line-3"></div>
             <br />
           </div>
-          <button class="common-btn">Przejdź do kontaktu</button>
+          <a class="common-btn" href="#contact">Przejdź do kontaktu</a>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@
       <div class="container course-row">
         <div class="course-left-col">
           <div class="course-text">
-            <h1>Maksimum możliwości<br />Lorem</h1>
+            <h1>Maksimum możliwości<br />Rozwoju</h1>
             <span class="square"></span>
             <p>
               Dzięki Peva Study możesz ubiegać się o studia do najlepszych
@@ -137,7 +137,34 @@
               dostać sie na wymarzoną architekturę, medycynę czy informatyke w
               Polsce!
             </p>
-            <button class="common-btn">Czytaj wiecej</button>
+            <p class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              architecto delectus dolorum esse sint! Quam sunt quisquam
+              molestiae. Quia ad beatae dolor quasi accusamus voluptatum nostrum
+              adipisci pariatur ut animi iure suscipit magni atque neque nam
+              tenetur possimus dolore harum minima dignissimos dolorem,
+              repudiandae, sint perferendis. Illo possimus recusandae nostrum,
+              vitae saepe quis doloremque eius itaque sit dolorem sint aliquid
+              quas architecto temporibus pariatur accusantium nemo cum fugit
+              officia dolor cumque animi hic. Eius ducimus quibusdam
+              necessitatibus. Rerum voluptate tempora autem! Ullam aliquam neque
+              enim a repellendus, ipsa quod facilis. Laborum ab tenetur
+              exercitationem. Vel porro incidunt eligendi labore est consectetur
+              minima eius magni dolorem exercitationem obcaecati qui recusandae,
+              architecto placeat! Enim impedit, eos earum alias in, porro
+              delectus quis eaque vitae necessitatibus quia accusamus, vel quas.
+              Porro eius aliquam cum cumque voluptatem, aut reiciendis voluptas
+              dolores eligendi distinctio. Placeat voluptatem voluptatum aut
+              vitae molestiae, voluptate rem dolor ipsum minus, corrupti dolores
+              unde deleniti quod omnis dicta facilis quibusdam amet officiis.
+              Aliquid cum odio nihil repudiandae enim voluptas magnam dolorem
+              voluptatem accusantium harum. Ipsum, illum tempora! Minus
+              reprehenderit officiis consequatur. Ipsa minima, aperiam
+              necessitatibus voluptas, facilis tempora nemo consequuntur eius
+              minus vero ut exercitationem porro sit rem dolorum, quia unde!
+            </p>
+            <button class="common-btn hidden-btn">Czytaj więcej</button>
+
             <div class="line">
               <div class="line-1"></div>
               <br />
@@ -169,7 +196,7 @@
             osoby, albowiem tylko wybitne jednostki dążą do coraz lepszego
             rozwoju swojej osoby.
           </p>
-          <button class="common-btn">Czytaj więcej</button>
+          <a class="common-btn" href="#contact">Sprawdź Nas</a>
           <div class="line">
             <div class="line-1"></div>
             <br />
@@ -253,7 +280,9 @@
             </div>
             <div class="footer-logo">
               <img src="images/logo.png" alt="" />
-              <button class="common-btn">Wróć do góry</button>
+              <a class="common-btn" href="#"
+                ><i class="fa fa-arrow-circle-up"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -287,6 +316,21 @@
         speed: 1000,
         speedAsDuration: true,
       });
+    </script>
+
+    <script>
+      const txt = document.querySelector(".hidden");
+      const btn = document.querySelector(".hidden-btn");
+
+      btn.onclick = function () {
+        if (txt.style.display == "none") {
+          txt.style.display = "block";
+          btn.innerText = "Schowaj";
+        } else {
+          txt.style.display = "none";
+          btn.innerText = "Czytaj więcej";
+        }
+      };
     </script>
   </body>
 </html>
