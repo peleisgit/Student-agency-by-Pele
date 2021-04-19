@@ -45,8 +45,7 @@ h1{
     margin: 15px 0;
 }
 
-.common-btn{
-    /* position: absolute; */
+.common-btn{    
     padding: 18px 40px;
     background: transparent;
     outline: none;
@@ -63,6 +62,11 @@ h1{
 .common-btn:hover{
     color: white;
     background: var(--dark-blue)
+}
+
+a.common-btn{
+    text-decoration: none;
+    border: 20 solid black;
 }
 
 
@@ -147,6 +151,11 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #5d5db84d;
+    background-image: url(images/background1.png), url(images/background2.png);
+    background-position: top, bottom;
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 
 .about-left-col{
@@ -421,10 +430,7 @@ hr{
         right: 50px;
         
     }
-    /* .common-btn{
-        padding: 10px 16px;
-        
-    } */
+    
     .social-icons i{      
         font-size: 14px;
         margin: 15px auto;
