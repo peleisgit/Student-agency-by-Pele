@@ -35,7 +35,7 @@
 }
 
 h1{
-    font-size: 34px;
+    font-size: 38px;
 }
 
 .square{
@@ -54,7 +54,7 @@ h1{
     font-weight: bold;
     cursor: pointer;
     transition: .3s;
-    font-size:18px;
+    font-size:22px;
     letter-spacing: 1px;
 }
 
@@ -82,7 +82,7 @@ a.common-btn{
 }
 
 p{
-    font-size: 15px;
+    font-size: 18px;
     line-height: 18px;
     color: #777;
 }
@@ -191,12 +191,12 @@ nav ul li a:hover{
 
 .about-text h2{
     margin: 50px 0 10px;
-    font-size: 28px;
+    font-size: 31px;
     font-style:italic;
 }
 
 .about-text h3{
-    font-size: 28px;
+    font-size: 30px;
     font-style: italic;
     color: #797979
 }
@@ -229,7 +229,7 @@ nav ul li a:hover{
 
 .feature-col h4{
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -359,7 +359,7 @@ hr{
 }
 
 .link-title small{
-    font-size: 13px;
+    font-size: 16px;
     color: #777;
     cursor: pointer;
 }
@@ -383,7 +383,7 @@ hr{
 .footer-logo button{
     padding: 12px 38px;
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -392,7 +392,7 @@ hr{
 }
 
 a i{
-    font-size: 30px;
+    font-size: 32px;
     animation: arrow 2s linear infinite alternate;
 }
 
@@ -425,10 +425,10 @@ a:hover i{
 }
 
 .social-icons i{
-    font-size: 30px;
+    font-size: 44px;
     display: block;
     width: 20px;
-    margin: 0 auto 20px;
+    margin: 20px auto 20px 25px;
     cursor: pointer;
     transform: .3s
 }
@@ -451,6 +451,11 @@ a:hover i{
     }
     a.common-btn{
         margin: 50px auto;
+        max-width: 80%;
+    }
+
+    a i{
+        font-size: 28px;
     }
     
     .header-text{
@@ -468,7 +473,7 @@ a:hover i{
     
     
     .social-icons i{      
-        font-size: 14px;
+        font-size: 28px;
         margin: 15px auto;
     }
     .about-left-col, .about-right-col{
