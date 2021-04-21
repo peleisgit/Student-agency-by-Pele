@@ -297,40 +297,12 @@
       <i class="fab fa-linkedin"></i>
     </div>
     <!-- SCRIPT -->
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const sideNav = document.getElementById("sideNav");
-
-      sideNav.style.right = "-250px";
-      menuBtn.onclick = function () {
-        if (sideNav.style.right == "-250px") {
-          sideNav.style.right = "0px";
-        } else {
-          sideNav.style.right = "-250px";
-        }
-      };
-    </script>
-
+    <script src="main.js"></script>
     <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1000,
         speedAsDuration: true,
       });
-    </script>
-
-    <script>
-      const txt = document.querySelector(".hidden");
-      const btn = document.querySelector(".hidden-btn");
-
-      btn.onclick = function () {
-        if (txt.style.display == "none") {
-          txt.style.display = "block";
-          btn.innerText = "Schowaj";
-        } else {
-          txt.style.display = "none";
-          btn.innerText = "Czytaj więcej";
-        }
-      };
     </script>
   </body>
 </html>
